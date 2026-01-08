@@ -1,0 +1,280 @@
+@import url('normalize.css');
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Raleway:wght@400;700&display=swap');
+
+/*
+font-family: 'Alegreya Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+/* ---------------- LAYOUT ------------- */
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+body{
+    background: #1d1d1d;
+    color: #fff;
+}
+.shadow{
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.3);
+}
+/* ---------------- TYPOGRAPHY ------------- */
+body{
+    font: 16px/28px 'Raleway', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+/* ---------------- LINK & BUTTON ------------- */
+.btn {
+    border:1px solid #6b4922;
+    padding: 0 42px;
+    line-height: 53px;
+    color: #ad7835;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    background:none;
+}
+/* ---------------- FORM ------------- */
+label{
+    display: none;
+}
+input{
+    border:none;
+    line-height: 53px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    display: inline-block;
+    padding: 0 8px;
+    background: none;
+}
+textarea{
+    border:none;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    display: inline-block;
+    padding: 0 8px;
+    background: none;
+    min-height: 110px;
+}
+
+
+/* ---------------- HEADER ------------- */
+header{
+    height: 100vh;
+    background:url(../images/header_bg.jpg) no-repeat center top/cover;
+    position: relative;
+}
+header .slogan{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 964px;    
+    border: 10px solid #ad7835;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 77px 0 90px;
+    color: #fff;
+}
+header .slogan h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 97px;
+    font-weight: bold;
+}
+header .slogan h2:after{
+    content:'';
+    position: absolute;
+    width: 91px;
+    height: 3px;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    top:32px;
+}
+header .slogan h1{
+    font-size: 180px;
+    line-height: 126px;
+    margin-bottom: 56px;
+}
+header .slogan p{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;    
+}
+/* ---------------- ABOUT US ------------- */
+.about_us{
+    background: #373737;
+    padding: 70px 67px 80px;
+    position: relative;
+    margin-bottom: 250px;
+}
+.about_us img{
+    position: absolute;
+    right: 63px;
+    top:-54px;
+}
+.main-tt{
+    color: #ad7835;
+    font-size: 60px;
+    line-height: 1;
+    position: relative;
+    margin-bottom: 32px;
+}
+.main-tt:after{
+    content:'';
+    position: absolute;
+    width: 91px;
+    height: 3px;
+    background: #ad7835;
+    top:calc(100% + 3px);
+    left: 0;
+}
+.about_us p{
+    width: 470px;
+    margin-bottom: 28px;
+}
+.about_us p:nth-of-type(2){
+    margin-bottom: 47px;
+}
+.about_us p:last-of-type{
+    margin-bottom: 0;
+}
+/* ---------------- LATEST ARTICLES ------------- */
+.latest_articles{
+    position: relative;
+    padding-top: 150px;
+}
+.latest_articles > h2{
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+.latest_articles ul{
+    margin-bottom: 325px;
+}
+.latest_articles ul li{
+    width: 370px;
+    float:left;
+    margin-right: 95px;
+}
+.latest_articles ul li:nth-child(2){
+    position: relative;
+    top:56px;
+}
+.latest_articles ul li:last-child{
+    margin-right: 0;
+}
+.latest_articles ul:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.latest_articles ul li > img{
+    width: 100%;
+    margin-bottom: 28px;
+}
+.latest_articles ul li h3{
+    font-size: 22px;
+    color: #ad7835;
+    position: relative;
+    margin-bottom: 25px;
+}
+.latest_articles ul li h3:after{
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:39px;
+    border:1px solid #ad7835;
+}
+.latest_articles ul li p{
+    margin-bottom: 23px;
+}
+.latest_articles ul li a{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ad7835;    
+}
+.latest_articles ul li a img{
+    margin-left: 18px;
+}
+
+/* ----------------  CONTACT ------------- */
+
+.contact {
+    background: #373737;
+    padding: 65px 63px 55px;
+    position: relative;
+}
+.contact img{
+    position: absolute;
+    top:-54px;
+    left:63px;
+}
+.contact form{
+    width: 470px;
+    margin-left: auto;
+}
+.contact form .field{
+    margin-bottom: 30px;
+}
+.contact form .field:last-of-type{
+    margin-bottom:58px;
+}
+.contact form .field input{
+    width: 214px;
+    color:#fff; 
+    box-sizing: border-box;   
+}
+.contact form input:first-of-type{
+    float: left;
+}
+.contact form input:last-of-type{
+    float: right;
+}
+.contact form .field:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+.contact form textarea{
+    width: 100%;
+    display: block;
+    color:#fff;
+    height: 110px;
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder{
+    color:#fff;
+}
+footer{
+    margin-top: 351px;
+    margin-bottom: 193px;
+}
+footer ul{
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+    margin: 0 13px;
+}
+footer ul li a{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border:1px solid #6b4922;
+    line-height: 78px;
+    box-sizing: border-box;
+    display: block;
+    color: #ad7835;
+    font-size: 28px;
+}
+footer ul li a:hover{
+    background: #ad7835;
+    color: #fff;
+}
